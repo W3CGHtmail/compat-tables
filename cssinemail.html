@@ -1,0 +1,1595 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS support in email clients</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p> </p>
+    <h1>CSS support in email clients</h1>
+    <p>This table is produced for the <a href="www.w3.org/community/htmail/">HTML
+        in email W3C Community Group</a>. It represents no consensus and probably
+      contains errors</p>
+    <table border="1">
+      <thead id="clients">
+        <tr class="header">
+          <th> Style Element</th>
+          <th class="client"> <a href="http://msdn.microsoft.com/en-us/library/aa338201.aspx"
+              target="_blank" rel="toolbot" data-original-title="Click to see full CSS rendering capabilities">Outlook
+              2007/10/13 <span class="blue">+</span></a></th>
+          <th class="client" title="Outlook 03/Express/Mail"> Outlook
+            03/Express/Mail</th>
+          <th class="client" title="iPhone iOS 7/iPad"> iPhone iOS 7/iPad</th>
+          <th class="client" title="Outlook.com"> Outlook.com</th>
+          <th class="client" title="Apple Mail 6.5"> Apple Mail 6.5</th>
+          <th class="client" title="Yahoo! Mail Beta"> Yahoo! Mail</th>
+          <th class="client" title="Google Gmail"> Google Gmail</th>
+          <th class="client"> <span rel="toolbot" data-original-title="Tested on a Google Nexus S">Android
+              4 (Gmail)</span></th>
+          <th class="client"> Yandex mail</th>
+          <th> ...<br>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="short">
+          <th colspan="11"> Selectors</th>
+        </tr>
+        <tr>
+          <th> *</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E[foo]</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E[foo="bar"]</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E[foo~="bar"]</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E[foo^="bar"]</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E[foo$="bar"]</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E[foo*="bar"]</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:nth-child(n)</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:nth-last-child(n)</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:nth-of-type(n)</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:nth-last-of-type(n)</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:first-child</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:last-child</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:first-of-type</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:last-of-type</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:empty</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:link</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:visited</th>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:active</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:hover</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:focus</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:target</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E::first-line</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E::first-letter</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E::before</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E::after</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E.classname</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E#id</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E:not(s)</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E F</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E &gt; F</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E + F</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> E ~ F</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr class="short">
+          <th colspan="11"> Text &amp; Fonts</th>
+        </tr>
+        <tr>
+          <th> @font-face</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> direction</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> font</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> font-family</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> font-style</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> font-variant</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> font-size</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <a href="http://www.campaignmonitor.com/blog/post/3339/save-your-layout-by-overriding-the-minimum-font-size-on-the-iphone-and/"
+              class="success info" rel="tooltip" data-original-title="By default, minimum font size is 13px. Use -webkit-text-adjust: none; to override.">Info</a>
+          </td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> font-weight</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> letter-spacing</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> line-height</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" rel="tooltip" data-original-title="line-height on td is ignored, use on p instead.">Info</span>
+          </td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> text-align</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> text-decoration</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> text-indent</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> text-overflow <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" rel="tooltip" data-original-title="text-overflow: ellipsis; does not work">Info</span>
+          </td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" rel="tooltip" data-original-title="text-overflow: ellipsis; does not work">Info</span>
+          </td>
+          <td> <span class="success info" rel="tooltip" data-original-title="text-overflow: ellipsis; does not work in Firefox">Info</span>
+          </td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> text-shadow <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> text-transform</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> white-space</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> word-spacing</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> word-wrap <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td> <span class="success info" rel="tooltip" data-original-title="word-wrap: normal; not supported">Info</span>
+          </td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> vertical-align</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> text-fill-color <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> text-fill-stroke <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr class="short">
+          <th colspan="11"> Color &amp; Background</th>
+        </tr>
+        <tr>
+          <th> color</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> background</th>
+          <td> <span class="success info" rel="tooltip" data-original-title="Background images not supported">Info</span>
+          </td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" rel="tooltip" data-original-title="Background images not supported">Info</span>
+          </td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> background <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> background-color</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> background-image</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> background-position</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> background-repeat</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> background-size <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" rel="tooltip" data-original-title="Image not stretched">Info</span>
+          </td>
+          <td class="fail">No</td>
+          <td> <span class="success info" rel="tooltip" data-original-title="Image not stretched">Info</span>
+          </td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> HSL Colors <span class="label">CSS3</span></th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> HSLA Colors <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> Opacity <span class="label">CSS3 </span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> RGBA Colors <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr class="short">
+          <th colspan="11"> Box Model</th>
+        </tr>
+        <tr>
+          <th> border</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> border-color</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> border-image <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> border-radius <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> box-shadow <span class="label">CSS3</span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> height</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> margin</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> padding</th>
+          <td> <span class="success info" data-original-title="Padding for p and div tags is not supported"
+              rel="tooltip">Info</span></td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> width</th>
+          <td> <span class="success info" data-original-title="Width for p and div tags is not supported"
+              rel="tooltip">Info</span></td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> max-width</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> min-width</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr class="short">
+          <th colspan="11"> Positioning &amp; Display</th>
+        </tr>
+        <tr>
+          <th> bottom</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> clear</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> clip</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> cursor</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> display</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> float</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> left</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> opacity</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> outline <span class="label">CSS3 </span></th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" data-original-title="Inner and outer border are collapsed"
+              rel="tooltip">Info</span></td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" data-original-title="Inner and outer border are collapsed"
+              rel="tooltip">Info</span></td>
+          <td> <span class="success info" data-original-title="Inner and outer border are collapsed"
+              rel="tooltip">Info</span></td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> overflow</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" data-original-title="overflow: hidden; does not work"
+              rel="tooltip">Info</span></td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" data-original-title="overflow: hidden; does not work"
+              rel="tooltip">Info</span></td>
+          <td> <span class="success info" data-original-title="overflow: hidden; does not work"
+              rel="tooltip">Info</span></td>
+          <td> <span class="success info" data-original-title="overflow: scroll; does not work"
+              rel="tooltip">Info</span></td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> position</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" data-original-title="position: fixed; does not result in elements being positioned relative to the reading pane"
+              rel="tooltip">Info</span></td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> resize <span class="label">CSS3 </span></th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" data-original-title="IE: Yes. Otherwise, inline text field with scrollbar displays, but no resize tab"
+              rel="tooltip">Info</span></td>
+          <td class="pass">Yes</td>
+          <td> <span class="success info" data-original-title="IE: Yes. Otherwise, inline text field with scrollbar displays, but no resize tab"
+              rel="tooltip">Info</span></td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> right</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> top</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> visibility</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> z-index</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr class="short">
+          <th colspan="11"> Lists</th>
+        </tr>
+        <tr>
+          <th> list-style-image</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> list-style-position</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> list-style-type</th>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr class="short">
+          <th colspan="11"> Tables</th>
+        </tr>
+        <tr>
+          <th> border-collapse</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> border-spacing</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> caption-side</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> empty-cells</th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> table-layout</th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Thanks to CampaignMonitor for the original dataset on which this was
+      based</p>
+  </body>
+</html>

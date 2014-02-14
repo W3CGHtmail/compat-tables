@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML5 rendering support in email clients</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1> HTML element support</h1>
+    <p>This table is produced for the <a href="www.w3.org/community/htmail/">HTML
+        in email W3C Community Group</a>. It represents no consensus and
+      probably contains errors<br>
+    </p>
+    <table border="1">
+      <thead id="clients">
+        <tr class="header">
+          <th> Style Element </th>
+          <td class="client"> <a href="http://msdn.microsoft.com/en-us/library/aa338201.aspx"
+              target="_blank" rel="toolbot" data-original-title="Click to see full CSS rendering capabilities">Outlook
+              2007/10/13 <span class="blue">+</span></a> </td>
+          <th class="client" title="Outlook 03/Express/Mail"> Outlook
+            03/Express/Mail </th>
+          <th class="client"> iPhone iOS 7/iPad </th>
+          <th class="client"> Outlook.com </th>
+          <th class="client"> Apple Mail 6.5 </th>
+          <th class="client"> Yahoo! Mail </th>
+          <th class="client"> Google Gmail </th>
+          <th class="client"> Gmail Android4 (Tested on Nexus S)</th>
+          <th class="client"> Yandex mail </th>
+          <th> ...<br>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="short">
+          <th colspan="11"> Style Element </th>
+        </tr>
+        <tr>
+          <th> <code>&lt;style&gt;</code> in <code>&lt;head&gt;</code> </th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> <code>&lt;style&gt;</code> in <code>&lt;body&gt;</code> </th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No<br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr class="short">
+          <th colspan="11"> Link Element </th>
+        </tr>
+        <tr>
+          <th> <code>&lt;link&gt;</code> in <code>&lt;head&gt;</code> </th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> <code>&lt;link&gt;</code> in <code>&lt;body&gt;</code> </th>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr class="short">
+          <th colspan="11"> Media Elements </th>
+        </tr>
+        <tr>
+          <th> <code>&lt;img&gt; with external source</code> </th>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td class="pass">Yes</td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> <code>&lt;canvas&gt;</code> </th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> <code>&lt;audio&gt;</code> </th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <a href="http://www.campaignmonitor.com/blog/post/3522/html5-video-support-in-hotmail/"
+              class="success info" rel="tooltip" data-original-title="The controls for the media player are disabled">Info</a>
+          </td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <th> <code>&lt;video&gt;</code> </th>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="pass">Yes</td>
+          <td> <a href="http://www.campaignmonitor.com/blog/post/3522/html5-video-support-in-hotmail/"
+              class="success info" rel="tooltip" data-original-title="The controls for the media player are disabled">Info</a>
+          </td>
+          <td class="pass">Yes</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No</td>
+          <td class="fail">No </td>
+          <td> <br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Thanks to CampaignMonitor for providing the original dataset from which
+      this has been adapted</p>
+  </body>
+</html>
