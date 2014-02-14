@@ -1,2 +1,6 @@
+/* Stylesheet by chaals */
+
 .fail {background-color: rgba(255,0,0,.1)}
 .pass {background-color: rgba(0,255,0,.1)}
+.partial {background-color: rgba(255,255,0,.1)}
+.n-a {background-color: #bbb}
